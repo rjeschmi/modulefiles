@@ -1,0 +1,11 @@
+#%Module
+# Setup the global plenv environment
+
+proc ModulesHelp { } {
+	puts stderr "This modulefile defines the plenv environment"
+}
+
+append-path PATH /software/tools/packages/plenv/bin
+prepend-path PATH {/software/tools/packages/plenv/shims};
+
+setenv PLENV_ROOT  /software/tools/packages/plenv
